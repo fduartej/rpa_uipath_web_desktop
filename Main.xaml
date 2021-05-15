@@ -85,7 +85,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Flowchart DisplayName="Diagrama de flujo" sap:VirtualizedContainerService.HintSize="1533,2396" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+  <Flowchart DisplayName="Diagrama de flujo" sap:VirtualizedContainerService.HintSize="1544,2396" sap2010:WorkflowViewState.IdRef="Flowchart_2">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:Int32" Name="status" />
       <Variable x:TypeArguments="x:String" Name="res" />
@@ -130,6 +130,7 @@
       <Variable x:TypeArguments="x:String" Name="resNewCredential" />
       <Variable x:TypeArguments="x:String" Name="CreNewPassword" />
       <Variable x:TypeArguments="njl:JObject" Name="outJsonNewCredential" />
+      <Variable x:TypeArguments="x:String" Name="STATUS_RUT" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -137,7 +138,7 @@
         <av:Point x:Key="ShapeLocation">360,292.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">390,367.5 390,424</av:PointCollection>
-        <x:Double x:Key="Width">1499.2913412081398</x:Double>
+        <x:Double x:Key="Width">1510</x:Double>
         <x:Double x:Key="Height">2359.7332822793383</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -1840,7 +1841,6 @@
                                                       <Sequence DisplayName="RUT Existente" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                                         <Sequence.Variables>
                                                           <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtraerTablaDeDatos" />
-                                                          <Variable x:TypeArguments="x:String" Name="STATUS_RUT" />
                                                         </Sequence.Variables>
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1907,6 +1907,9 @@
                                                           </ui:AppendLine>
                                                           <FlowStep.Next>
                                                             <FlowDecision x:Name="__ReferenceID41" DisplayName="Is Not Blocked?" sap:VirtualizedContainerService.HintSize="88,87" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
+                                                              <FlowDecision.Condition>
+                                                                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="STATUS_RUT&lt;&gt;&quot;BLOQUEADO&quot;" />
+                                                              </FlowDecision.Condition>
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
