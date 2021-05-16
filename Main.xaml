@@ -1957,8 +1957,12 @@
                                                                           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                                                         </ui:HttpClient.Cookies>
                                                                         <ui:HttpClient.Headers>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="Content-Type">application/json</InArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="Ocp-Apim-Subscription-Key">b3aa08187566443cb6d93e4b6e787e6f</InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="Content-Type">
+                                                                            <Literal x:TypeArguments="x:String">application/json</Literal>
+                                                                          </InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="Ocp-Apim-Subscription-Key">
+                                                                            <Literal x:TypeArguments="x:String">cec79965bdf04465bb7074071865c0ea</Literal>
+                                                                          </InArgument>
                                                                         </ui:HttpClient.Headers>
                                                                         <ui:HttpClient.Parameters>
                                                                           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
@@ -2178,8 +2182,12 @@
                                                                       <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                                                     </ui:HttpClient.Cookies>
                                                                     <ui:HttpClient.Headers>
-                                                                      <InArgument x:TypeArguments="x:String" x:Key="Content-Type">application/json</InArgument>
-                                                                      <InArgument x:TypeArguments="x:String" x:Key="Ocp-Apim-Subscription-Key">b3aa08187566443cb6d93e4b6e787e6f</InArgument>
+                                                                      <InArgument x:TypeArguments="x:String" x:Key="Content-Type">
+                                                                        <Literal x:TypeArguments="x:String">application/json</Literal>
+                                                                      </InArgument>
+                                                                      <InArgument x:TypeArguments="x:String" x:Key="Ocp-Apim-Subscription-Key">
+                                                                        <Literal x:TypeArguments="x:String">cec79965bdf04465bb7074071865c0ea</Literal>
+                                                                      </InArgument>
                                                                     </ui:HttpClient.Headers>
                                                                     <ui:HttpClient.Parameters>
                                                                       <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
