@@ -1,5 +1,5 @@
 {
-  "name": "WARI_DEV",
+  "name": "WARI_PROD",
   "description": "WARI",
   "main": "Main.xaml",
   "dependencies": {

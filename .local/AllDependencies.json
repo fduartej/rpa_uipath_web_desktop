@@ -5428,8 +5428,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "WARI_DEV",
-      "projectName": "WARI_DEV",
+      "projectUniqueName": "WARI_PROD",
+      "projectName": "WARI_PROD",
       "projectPath": "C:\\Users\\fduarte.SAB01TS126.000\\Documents\\UiPath\\WARI_PROD\\.local",
       "packagesPath": "C:\\Users\\fduarte.SAB01TS126.000\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\fduarte.SAB01TS126.000\\Documents\\UiPath\\WARI_PROD\\.local"
